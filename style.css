@@ -25,26 +25,18 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 body {
-  /*  font-family: "Ubuntu",Tahoma,"Helvetica Neue",Helvetica,Arial,sans-serif; */
-  font-family: "Ubuntu","Hiragino Sans GB","Hiragino Sans GB W3", "Microsoft Yahei";
-  /*font-family: "Ubuntu","Hiragino Sans GB","Hiragino Sans GB W3";*/
-	/*font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;*/
-	/*font-family: Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;*/
-  font-size: 13px !important;
-  -webkit-font-smoothing:antialiased;
+  	font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+	font-size: 13px !important;
+	-webkit-font-smoothing:antialiased;
 }
 
 a {
-  /*color: #dd4814;*/
-	/*color: #FF851B;*/
-  color: #F05940;
+  	color: #F05940;
 	text-decoration: none;
 }
 
 a:hover {
-  /*color: #97310e;*/
-  /*color: #85144B;*/
-  color: #FF851B;
+  	color: #FF851B;
 }
 
 #main.site-main > .ui.segment,
@@ -53,7 +45,7 @@ a:hover {
 }
 
 #colophon > .ui.grid > .ui.row > .ui.column {
-  font-size: 0.5rem !important;
+  font-size: 1rem !important;
 }
 
 .ui.tiny.labels .label,
@@ -61,6 +53,10 @@ a:hover {
     font-size: 0.6875rem;
     padding: 0.2em 0.4em;
 }
+
+.ui.label {
+	text-transform: none;
+	}
 
 .ui.orange.header {
   color: #F05940 !important;
