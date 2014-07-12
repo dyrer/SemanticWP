@@ -33,6 +33,9 @@
 		<!-- </div> -->
 
 		<!-- #site-navigation -->
+		<div class="ui menu">
+		<?php wp_nav_menu(); ?>
+	</div>
 	</header><!-- #masthead -->
 
 	<div id="content" class="ui stackable grid">

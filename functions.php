@@ -47,7 +47,10 @@ function semantic_ui_wp_theme_setup() {
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'semantic-ui-wp-theme' ),
 	) );
-
+	/**
+	* Styling menus with Semantic-UI
+	*/
+	
 	/**
 	 * Enable support for Post Formats
 	 */
@@ -83,12 +86,11 @@ add_action( 'widgets_init', 'semantic_ui_wp_theme_widgets_init' );
  * Enqueue scripts and styles
  */
 function semantic_ui_wp_theme_scripts() {
-	#wp_enqueue_style( 'bootstrap', 'http://cdn.staticfile.org/twitter-bootstrap/2.3.2/css/bootstrap.css' );
-	#wp_enqueue_style( 'bootstrap-responsive', 'http://cdn.staticfile.org/twitter-bootstrap/2.3.2/css/bootstrap-responsive.css' );
+
 	wp_enqueue_style( 'semantic-ui', get_template_directory_uri() . '/assets/semantic-ui/css/semantic.min.css' );
 	wp_enqueue_style( 'semantic-ui-wp-theme-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'jQuery', get_template_directory_uri(). '/assets/jquery-1.8.2.min.js' );
+	/** wp_enqueue_script( 'jQuery', get_template_directory_uri(). '/assets/jquery-1.8.2.min.js' ); */
 	wp_enqueue_script( 'semantic-ui-wp-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'semantic-ui-wp-theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
